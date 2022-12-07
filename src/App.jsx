@@ -1,6 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import React from 'react'
 import {Content} from './Content/Content';
+
 function timeout(delay) {
   return new Promise(res => setTimeout(res, delay));
 }
@@ -81,7 +83,10 @@ const App = () => {
 
        
         <div className='contentBackground'>
-          {Content('Content 1', 'This is the first content','testimg')}
+        {Content('Content 1', 'This is the first content','testimg')}
+          {Content('Content 2', 'This is the second content','testimg')}{Content('Content 1', 'This is the first content','testimg')}
+          {Content('Content 2', 'This is the second content','testimg')}{Content('Content 1', 'This is the first content','testimg')}
+          {Content('Content 2', 'This is the second content','testimg')}{Content('Content 1', 'This is the first content','testimg')}
           {Content('Content 2', 'This is the second content','testimg')}
         </div>
         </div>
