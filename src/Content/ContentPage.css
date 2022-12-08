@@ -9,6 +9,7 @@
   position: center;
   margin-top: 120px;
   min-width: 850px;
+  max-width: 850px;
   height: min-content;
   /* flex-basis: inherit; */
   
@@ -18,5 +19,6 @@
 @media screen and (max-width: 900px) {
     .contentBackgroundColumn{
       min-width: 90vw;
+      max-width: 90vw;
     }
   }
