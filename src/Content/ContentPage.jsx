@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import './ContentPage.css'
-import t1 from './markdown/1.md'
+import cardReader from './markdown/cardReader.md'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useEffect, useState } from 'react';
@@ -11,15 +11,16 @@ const ContentPage = () => {
     const [contents, setContents] = useState(
         [
         {
-            title: 'test1',
-            id: '1',
+            title: 'Makerspace Card Reader System',
+            id: 'cardReader',
+            import: cardReader,
             content: '',
         },
-        {
-            title: 'test2',
-            id: '2',
-            content: '',
-        },
+        // {
+        //     title: 'test2',
+        //     id: '2',
+        //     content: '',
+        // },
     ]
     );
 
@@ -29,7 +30,7 @@ const ContentPage = () => {
     //on page load
     useEffect(() => {
         contents.forEach(x => {
-            fetch(t1)
+            fetch(x.import)
                 .then(response => response.text())
                 .then(text => {
                     console.log(text);
@@ -47,7 +48,7 @@ const ContentPage = () => {
 
             <div className='contentBackgroundColumn'>
                 
-                <ReactMarkdown remarkPlugins={[remarkGfm]} children={String(contents.find(x => x.id === id).content)} />
+                <ReactMarkdown className='markdownText' remarkPlugins={[remarkGfm]} children={String(contents.find(x => x.id === id).content)} />
                 
             </div>
             <h className='headerBarText'>

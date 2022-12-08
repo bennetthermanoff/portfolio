@@ -1,3 +1,8 @@
+.markdownText{
+  text-align: left;
+  margin: 0 55px;
+}
+
 .contentBackgroundColumn{
     display:inline-flex;
   background-color: rgba(0, 0, 0,.25);
@@ -12,7 +17,7 @@
   max-width: 850px;
   height: min-content;
   /* flex-basis: inherit; */
-  
+  text-align: left;
   
   border-radius: 10px;
 }
