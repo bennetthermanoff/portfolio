@@ -10,4 +10,4 @@ The frontend communicates with arudino microcontrollers and NFC card readers via
 
 All of the code is open source and available on [GitHub](https://github.com/xpsking/TU-Makerspace-Card-Reader).
 
-![Tulane Makerspace Card Reader](https://raw.githubusercontent.com/xpsking/TU-Makerspace-Card-Reader/master/src/Content/markdown/images/1pager.png)
+![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/1pager.png)
