@@ -15,7 +15,12 @@ const router = createBrowserRouter([
     element: <App/> ,
     errorElement: <h1>404 Page Not Found</h1>,
     
-  },{
+  },
+  {path:"/home",
+  element:<App isNavigated={true}/>,
+  errorElement: <h1>404 Page Not Found</h1>,
+  },
+  {
     path:"/content/:id",
     element:<ContentPage/>,
     errorElement: <h1>404 Page Not Found</h1>,

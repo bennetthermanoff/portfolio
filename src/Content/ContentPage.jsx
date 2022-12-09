@@ -1,29 +1,15 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './ContentPage.css'
-import cardReader from './markdown/cardReader.md'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useEffect, useState } from 'react';
+import contentsDefault from './contents';
 
 
 const ContentPage = () => {
-    const [contents, setContents] = useState(
-        [
-        {
-            title: 'Makerspace Card Reader System',
-            id: 'cardReader',
-            import: cardReader,
-            content: '',
-        },
-        // {
-        //     title: 'test2',
-        //     id: '2',
-        //     content: '',
-        // },
-    ]
-    );
-
+    const [contents, setContents] = useState(contentsDefault);
+    const  navigate  = useNavigate();
 
 
     let { id } = useParams();
@@ -52,12 +38,14 @@ const ContentPage = () => {
                 <ReactMarkdown className='markdownText' remarkPlugins={[remarkGfm]} children={String(contents.find(x => x.id === id).content)} />
                 
             </div>
-            <h className='headerBarText'>
-                Bennett Hermanoff
-            </h>
-            <div className='headerBar'>
+            
+            <h className='headerBarText' >
+                <div className='headerBarText2' onClick={() => { navigate(`/home`); console.log('clicked!') }}>
+                    Bennett Hermanoff 
+                </div>
                 <a class='headerBarLink' href='https://github.com/xpsking' >github</a>
-            </div>
+            </h>
+            
         </div>
     )
 
@@ -65,4 +53,4 @@ const ContentPage = () => {
 
 
 
-export { ContentPage }
+export { ContentPage , contentsDefault}

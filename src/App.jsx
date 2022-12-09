@@ -1,45 +1,45 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import React from 'react'
-import {Content} from './Content/Content';
-
+import { useState } from 'react';
+import React, {memo} from 'react'
+import { Content } from './Content/Content';
+import { contentsDefault } from './Content/ContentPage';
 function timeout(delay) {
   return new Promise(res => setTimeout(res, delay));
 }
 
-const App = () => {
+const App = ({isNavigated}) => {
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(isNavigated ? 256 : 0);
   const handleScroll = () => {
+    if (scrollPosition <11) { 
+      setScrollPosition(11);
+    }
 
-    setScrollPosition(scrollPosition + 1);
 
   };
   window.addEventListener('wheel', handleScroll, { passive: true });
-  useEffect(() => {
-
-    // console.log(scrollPosition);
-  }, [scrollPosition]);
-
-
-
 
   timeout(2000).then(async () => {
     if (scrollPosition === 0) {
       setScrollPosition(12);
 
     }
-    if(scrollPosition===12){
+    if (scrollPosition === 12) {
       setScrollPosition(256);
     }
   });
+
+  const MemoizedContents = memo( ()=> contentsDefault.map((content) => 
+     <Content content={content} />
+  ), (prevProps, nextProps) => prevProps.content[0].title === nextProps.content[0].title);
+  
   timeout(3000).then( () => {
-    
-    setScrollPosition(256);
+    if (setScrollPosition<255){
+      setScrollPosition(256);
+    }
+
   });
-
-
-
+  
   const topStyle = {
     //animate to position 0
     transform: scrollPosition < 10 ? `rotate(-15deg) translate(${scrollPosition * -1 - 70}vw,${scrollPosition * -7.8 + 16.5}vh) ` : `rotate(-15deg) translate(${12 * -1 - 70}vw,${12 * -7.8 + 16.5}vh) `,
@@ -52,11 +52,8 @@ const App = () => {
     marginTop: '-100vh',
     overflow: 'hidden',
     pointerEvents: 'fill',
-    filter:scrollPosition===256? 'opacity(0)':'opacity(1)',
+    filter: scrollPosition === 256 ? 'opacity(0)' : 'opacity(1)',
     // borderTop: '3000px solid #3c92e7',
-
-
-
   }
   const bottomStyle = {
     //animate to position 0
@@ -68,43 +65,25 @@ const App = () => {
     paddingBottom: '100vh',
     marginBottom: '-100vh',
     pointerEvents: 'fill',
-    filter:scrollPosition===256? 'opacity(0)':'opacity(1)',
+    filter: scrollPosition === 256 ? 'opacity(0)' : 'opacity(1)',
   }
 
   return (
     <div className="App">
       <header className="App-header">
         <div className='window'>
+          <div className="topBanner" />
+          <div className="contentWrapper">
+            <div className='contentBackground'>
+              <MemoizedContents />
+            </div>
+          </div>
+          <h className='headerBarText'>
+            Bennett Hermanoff
+            <a class='headerBarLink' href='https://github.com/xpsking' >github</a>
 
-       
-        <div className="topBanner"/>
-
-       <div className="contentWrapper">
-
-       
-        <div className='contentBackground'>
-        {Content('Content 1', 'This is the first content','testimg')}
-          {Content('Content 2', 'This is the second content','testimg')}{Content('Content 1', 'This is the first content','testimg')}
-          {Content('Content 2', 'This is the second content','testimg')}{Content('Content 1', 'This is the first content','testimg')}
-          {Content('Content 2', 'This is the second content','testimg')}{Content('Content 1', 'This is the first content','testimg')}
-          {Content('Content 2', 'This is the second content','testimg')}
-        </div>
-        </div>
-
-        <h className='headerBarText'>
-          Bennett Hermanoff
-        </h>
-        <div className='headerBar'>
-
-
-          <a class='headerBarLink' href='https://github.com/xpsking' >github</a>
-
-        </div>
-
-
-
-
-       
+          </h>
+          
 
         </div>
         <div className='loadscreen'>
