@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import './ContentPage.css'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'

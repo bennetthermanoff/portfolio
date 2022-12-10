@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import './WelcomeBar.css'
 
 const WelcomeBar = ({isOpen}) => {

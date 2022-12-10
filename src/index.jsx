@@ -6,10 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  useHistory
+  Route
 } from "react-router-dom";
-import { AnimatedSwitch } from 'react-router-transition';
+
 import { ContentPage } from './Content/ContentPage'
 
 
