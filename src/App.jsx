@@ -35,7 +35,7 @@ const App = ({isNavigated}) => {
 
   timeout(2000).then(async () => {
     if (scrollPosition === 0) {
-      // setScrollPosition(12);
+      setScrollPosition(12);
 
     }
     if (scrollPosition === 12) {

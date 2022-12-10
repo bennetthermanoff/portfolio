@@ -169,7 +169,7 @@
   font-weight: 700;
   font-kerning: 2em;
   text-transform: uppercase;
-  font: 700 3em/.9em 'consolas', sans-serif;
+  font: 700 2.5em/.9em 'consolas', sans-serif;
   transform: translateX(60px)
               rotate(0deg)
               skew(-20deg);
