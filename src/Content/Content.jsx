@@ -17,6 +17,7 @@ const Content = ({ content }) => {
         height: 100%;
         background-image: url(${props => props.img}) ;
         background-size: cover;
+        background-position-y: 40%;
         filter: blur(5px);
     }
         /* transform: translate3d(0, 0, 0); */

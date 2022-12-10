@@ -28,19 +28,23 @@ const ContentPage = () => {
                     }))
                 })
         })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []) 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
     return (
-        <div className='App-header'>
 
-            <div className='contentBackgroundColumn'>
-                
-                <ReactMarkdown className='markdownText' remarkPlugins={[remarkGfm]} children={String(contents.find(x => x.id === id).content)} />
-                
-            </div>
-            
-            
-            
+        
+            <div className='content'>
+                <div className='imgWrapper'>
+                    <img className='headerImg' src={contents.find(x => x.id === id).previewImg} alt={contents.find(x => x.id === id).title} />
+                </div>
+                <div className='contentBackgroundColumn'>
+
+                    <ReactMarkdown className='markdownText' remarkPlugins={[remarkGfm]} children={String(contents.find(x => x.id === id).content)} />
+
+                </div>
+           
+
+
         </div>
     )
 
@@ -48,4 +52,4 @@ const ContentPage = () => {
 
 
 
-export { ContentPage , contentsDefault}
+export { ContentPage, contentsDefault }

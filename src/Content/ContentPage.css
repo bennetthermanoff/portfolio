@@ -2,12 +2,6 @@
   text-align: left;
   margin: 0 55px;
 }
-.headerBarText2{
-  user-select: none;
-}
-.headerBarText2:hover{
-  cursor: pointer;
-}
 
 .contentBackgroundColumn{
     display:inline-flex;
@@ -16,11 +10,10 @@
   align-self: center;
   justify-content: top;
   align-items: center;
-  overflow-y: auto;
+  overflow-y: visible;
   position: center;
   margin-top: 120px;
-  min-width: 850px;
-  max-width: 850px;
+  width: 1150px;
   height: min-content;
   /* flex-basis: inherit; */
   text-align: left;
@@ -28,10 +21,73 @@
   border-radius: 10px;
 }
 img[alt=photo] { width: 65vw; text-align: center; max-width: 800px; }
-@media screen and (max-width: 900px) {
+
+.contentflexWrapper{
+  position: relative;
+  top:40vh;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+ 
+}
+
+
+@media screen and (max-width: 1200px) {
     .contentBackgroundColumn{
-      min-width: 90vw;
-      max-width: 90vw;
+      width: 80vw;
+    }
+    .imgWrapper{
+      width: 90vw;
     }
   }
+.imgWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 1000px;
+  height: fit-content;
 
+}
+.headerImg{
+  padding-top: 100px;
+  width: 100%;
+  
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow-y: visible;
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #52d4ee, #3c92e7, #5ff397, #25fad3);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100%;
+  width: 100%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}
