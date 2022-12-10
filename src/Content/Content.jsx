@@ -1,11 +1,11 @@
 import './Content.css';
 import React from 'react'
 import styled from 'styled-components';
-import { useNavigate } from 'react-router';
+import { useHistory } from 'react-router-dom';
 const Content = ({ content }) => {
-    const navigate = useNavigate();
-    
-    
+    const history = useHistory();
+
+
     const ContentBox = styled.div`
     &:before{
         content: "";
@@ -40,7 +40,11 @@ const Content = ({ content }) => {
     `
 
     return (
-        <ContentBox img={content.previewImg} onClick={() => { navigate(`/content/${content.id}`) }}>
+        <ContentBox img={content.previewImg} onClick={async () => {
+            await new Promise((resolve) => setTimeout(resolve, 200));
+            history.push(`/content/${content.id}`);
+            
+        }}>
             <div className="contentboxtext">
                 <h1>{content.title}</h1>
                 <p>{content.description}
@@ -48,7 +52,7 @@ const Content = ({ content }) => {
                 </p>
             </div>
         </ContentBox>
-        
+
     )
 }
 export { Content };

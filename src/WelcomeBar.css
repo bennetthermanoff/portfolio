@@ -1,0 +1,71 @@
+.welcomeBar {
+    position: inherit;
+    top: 40px;
+    left: 0;
+    width: 100vw;
+    max-width: 1500px;
+    height:15em;
+    margin-top: 50px;
+    
+    text-align: center;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: block;
+    line-height: 5em; /* a */
+    text-align: left;
+}
+
+.welcomeBarText {
+    /* position: relative; */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 4.5em;
+    letter-spacing: -7px;
+    font-weight: 400;
+    font: optional;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.anything{
+    position: relative;
+    top: -5%;
+    /* max-height: 1vh; */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 6em;
+    font-weight: 800;
+    font: optional;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    transform:
+    skew(-20deg);
+    
+    animation-name: anythingAnimate;
+    animation-duration: 1.5s;
+   
+    /* animation-iteration-count: 1; */
+    letter-spacing: -7px;
+    text-align: right;
+}
+
+@keyframes anythingAnimate {
+    0% {
+        
+        letter-spacing: -50px;
+        transform: translateX(50vw);
+    }
+    100% {
+        letter-spacing: -7px;
+        text-align: right;
+    }
+    
+}

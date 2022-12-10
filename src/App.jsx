@@ -1,11 +1,25 @@
 import './App.css';
 import { useState } from 'react';
 import React, {memo} from 'react'
+import { useHistory } from 'react-router-dom';
 import { Content } from './Content/Content';
 import { contentsDefault } from './Content/ContentPage';
+import WelcomeBar from './WelcomeBar';
 function timeout(delay) {
   return new Promise(res => setTimeout(res, delay));
 }
+
+const AppBar = () => {
+  const history = useHistory();
+  return (
+    <h className='headerBarText' >
+      <div className='headerBarText2' onClick={() => { history.push(`/home`); }}>
+        Bennett Hermanoff
+      </div>
+      <a class='headerBarLink' href='https://github.com/xpsking' >github</a>
+    </h>)
+}
+
 
 const App = ({isNavigated}) => {
 
@@ -72,17 +86,14 @@ const App = ({isNavigated}) => {
     <div className="App">
       <header className="App-header">
         <div className='window'>
-          <div className="topBanner" />
+          <div className="topBanner" >
+           <WelcomeBar isOpen={scrollPosition>10}/>
+          </div>
           <div className="contentWrapper">
             <div className='contentBackground'>
               <MemoizedContents />
             </div>
           </div>
-          <h className='headerBarText'>
-            Bennett Hermanoff
-            <a class='headerBarLink' href='https://github.com/xpsking' >github</a>
-
-          </h>
           
 
         </div>
@@ -118,3 +129,4 @@ const App = ({isNavigated}) => {
 }
 
 export default App;
+export { AppBar };

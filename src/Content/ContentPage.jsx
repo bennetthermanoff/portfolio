@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import './ContentPage.css'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -9,7 +9,7 @@ import contentsDefault from './contents';
 
 const ContentPage = () => {
     const [contents, setContents] = useState(contentsDefault);
-    const  navigate  = useNavigate();
+
 
 
     let { id } = useParams();
@@ -39,12 +39,7 @@ const ContentPage = () => {
                 
             </div>
             
-            <h className='headerBarText' >
-                <div className='headerBarText2' onClick={() => { navigate(`/home`); console.log('clicked!') }}>
-                    Bennett Hermanoff 
-                </div>
-                <a class='headerBarLink' href='https://github.com/xpsking' >github</a>
-            </h>
+            
             
         </div>
     )
