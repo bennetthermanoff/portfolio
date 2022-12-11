@@ -35,13 +35,13 @@
 }
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
-	}
-	50% {
 		background-position: 100% 50%;
 	}
-	100% {
+	50% {
 		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
 	}
 }
 .window{
@@ -88,6 +88,7 @@
   .contentBackground{
     min-width: 90vw;
   }
+  
 }
   
 
@@ -164,18 +165,24 @@
 }
 .nameHermanoff {
   color: white;
-  font-size: 4em;
-  
+  font-size: 3em;
+  line-height: .9em;
   font-weight: 700;
   font-kerning: 2em;
   text-transform: uppercase;
-  font: 700 2.5em/.9em 'consolas', sans-serif;
+  font-family: 'consolas';
+  /* font: 700 3em/.9em 'consolas', sans-serif; */
   transform: translateX(60px)
               rotate(0deg)
               skew(-20deg);
   margin: 0;
   padding: 0;
   
+}
+@media screen and (max-width: 300){
+  .nameHermanoff{
+    font-size: 1em;
+  }
 }
 .textMoveTop {
   position: relative;

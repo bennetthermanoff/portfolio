@@ -34,9 +34,9 @@ const ContentPage = () => {
 
         
             <div className='content'>
-                <div className='imgWrapper'>
+                
                     <img className='headerImg' src={contents.find(x => x.id === id).previewImg} alt={contents.find(x => x.id === id).title} />
-                </div>
+                
                 <div className='contentBackgroundColumn'>
 
                     <ReactMarkdown className='markdownText' remarkPlugins={[remarkGfm]} children={String(contents.find(x => x.id === id).content)} />
