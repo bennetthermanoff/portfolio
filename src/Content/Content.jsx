@@ -23,6 +23,7 @@ const Content = ({ content }) => {
         /* transform: translate3d(0, 0, 0); */
         position: relative;
         width: 95%;
+        max-width: 800px;
         border: 2px solid #000000;
         border-radius: 5px;
         margin: 5px;
