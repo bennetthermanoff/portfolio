@@ -21,6 +21,7 @@
   border-radius: 10px;
 }
 img[alt=photo] { width: 65vw; text-align: center; max-width: 800px; }
+img[alt=photo-small] { width: 65vw; text-align: center; max-width: 300px; }
 
 .contentflexWrapper{
   position: relative;

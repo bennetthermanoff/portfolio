@@ -10,4 +10,4 @@ Our sensors used ESP32 based microprocessors, with solar panels and lithium ion 
 
 Each sensor's casing was 3D printed using designs created in Fusion360. The sensors were programmed using the Arduino IDE in C++. The code is available on [Github](). We used React to build the website and Node.js and The Things Network to build the server. The server was hosted on Microsoft Azure.
 
-![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/updatedwatersensor.png)
+![photo-small](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/updatedwatersensor.png)

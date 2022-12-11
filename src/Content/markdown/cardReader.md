@@ -2,7 +2,7 @@
 
 React/NodeJS/Express/MySQL app for the Tulane Makerspace. Tablets are mounted on the wall and allow users to turn on the Makerspace's laser cutter, 3D printer, and CNC Mill, and other machines.
 
-![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/cardScreen.tiff)
+![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/cardScreen.png)
 
 Employees are also able to "tag out" machines for maintenance or repair. 
 
