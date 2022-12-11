@@ -2,6 +2,8 @@
 
 React/NodeJS/Express/MySQL app for the Tulane Makerspace. Tablets are mounted on the wall and allow users to turn on the Makerspace's laser cutter, 3D printer, and CNC Mill, and other machines.
 
+![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/cardScreen.tiff)
+
 Employees are also able to "tag out" machines for maintenance or repair. 
 
 The frontend is a React app that communicates with the backend via a REST API. The backend is a NodeJS/Express app that communicates with a MySQL database. 

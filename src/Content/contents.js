@@ -6,6 +6,9 @@ import fightStickImg from './markdown/images/fightstick.JPG'
 
 import resume from './markdown/resume.md'
 import resumeImg from './markdown/images/headshot.jpeg'
+
+import current from './markdown/current.md'
+import currentImg from './markdown/images/the3sensors.jpeg'
 const contents= [
     {
         title: 'Makerspace Card Reader System',
@@ -24,6 +27,14 @@ const contents= [
         previewImg: fightStickImg
     },
     {
+        title:'Current',
+        id: 'current',
+        import: current,
+        content: '',
+        description: 'Water sensors to monitor flooding on a city scale.',
+        previewImg: currentImg
+    },
+    {
         title:'Resume',
         id: 'resume',
         import: resume,
@@ -31,6 +42,8 @@ const contents= [
         description: 'learn more about me and my experience as a software engineer and maker.',
         previewImg: resumeImg
     },
+    
+
 
 ]
 export default contents
