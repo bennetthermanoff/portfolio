@@ -1,4 +1,4 @@
-import {QRCodeCanvas, QRCodeSVG} from 'qrcode.react';
+import {QRCodeSVG} from 'qrcode.react';
 import './ContentPage.css'
 import {useState} from 'react';
 const QrPage = ()=>{
