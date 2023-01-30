@@ -89,3 +89,18 @@ img[alt=photo-small] { width: 65vw; text-align: center; max-width: 300px; }
 	}
 
 }
+.QR{
+  padding-top: 150px;
+  padding-bottom: 50px;
+  width: 60%;
+}
+.QRInput{
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+  font-size: .75em;
+  text-align: left;
+  margin-bottom: 10px;
+}

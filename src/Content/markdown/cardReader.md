@@ -1,6 +1,6 @@
 # Tulane Makerspace Card Reader
 
-React/NodeJS/Express/MySQL app for the Tulane Makerspace. Tablets are mounted on the wall and allow users to turn on the Makerspace's  3aisdyfoiuhasdfiuahsdiofuasydpufyasdioufyaosdfyaosidufyasoiudfyoiasudyfoiuasdyfpiuaysdoifuyaosidufyaoisudfyiasudfyoiasudyfoiasudyfoiusdyfoiusdyfD printer,laser cutter, and CNC Mill, and other machines. 
+React/NodeJS/Express/MySQL app for the Tulane Makerspace. Tablets are mounted on the wall and allow users to turn on the Makerspace's   3aisdyfoiuhasdfiuahsdiofuasydpufyasdioufyaosdfyaosidufyasoiudfyoiasudyfoiuasdyfpiuaysdoifuyaosidufyaoisudfyiasudfyoiasudyfoiasudyfoiusdyfoiusdyfD printer,laser cutter, and CNC Mill, and other machines. 
 
 ![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/cardScreen.png)
 

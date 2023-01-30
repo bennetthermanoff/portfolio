@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App, {AppBar} from './App';
 import reportWebVitals from './reportWebVitals';
+import {QrPage} from './Content/Qr';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,7 @@ root.render(
           <App isNavigated={true} />
         </Route>
         <Route path="/content/:id" component={ContentPage} />
+        <Route path="/qr" component={QrPage}/>
       </Switch>
       <AppBar />
     </Router>
