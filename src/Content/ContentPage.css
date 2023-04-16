@@ -61,6 +61,9 @@ img[alt=photo-small] { width: 65vw; text-align: center; max-width: 300px; }
     .contentBackgroundColumn{
       width: 80vw;
     }
+    .contentBackgroundColumnQR{
+      width: 80vw;
+    }
     .headerImg{
       width: 90vw;
     }
