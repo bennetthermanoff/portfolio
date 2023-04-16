@@ -20,6 +20,25 @@
   
   border-radius: 10px;
 }
+
+.contentBackgroundColumnQR{
+  display:inline-flex;
+background-color: rgb(255, 255, 255);
+flex-direction: column;
+align-self: center;
+justify-content: top;
+align-items: center;
+overflow-y: visible;
+position: center;
+margin-top: 10px;
+width: 1150px;
+height: min-content;
+/* flex-basis: inherit; */
+text-align: left;
+
+border-radius: 10px;
+}
+
 img[alt=photo] { width: 65vw; text-align: center; max-width: 800px; }
 img[alt=photo-small] { width: 65vw; text-align: center; max-width: 300px; }
 

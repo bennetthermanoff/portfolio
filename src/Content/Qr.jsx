@@ -17,7 +17,7 @@ const QrPage = ()=>{
 
     return(
         <div className='content'>
-            <div className='contentBackgroundColumn'>
+            <div className='contentBackgroundColumnQR'>
             <QRCodeSVG value={qrValue} className='QR' size={500}/>
             <input type='text' className='QRInput' placeholder='Enter URL here' onChange={onChange} value={qrValue}/>
             </div>
