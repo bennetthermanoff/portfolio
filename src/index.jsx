@@ -4,6 +4,7 @@ import './index.css';
 import App, {AppBar} from './App';
 import reportWebVitals from './reportWebVitals';
 import {QrPage} from './Content/Qr';
+import Pid from './Content/PID/App.tsx';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,7 @@ root.render(
         </Route>
         <Route path="/content/:id" component={ContentPage} />
         <Route path="/qr" component={QrPage}/>
+        <Route path="/pid" component={Pid}/>
       </Switch>
       <AppBar />
     </Router>
