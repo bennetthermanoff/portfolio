@@ -1,4 +1,5 @@
-.App {
+.PIDAPP {
+  background-color: #282c34;
   display: flex;
   flex-direction: row;
   text-align: center;

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import './PIDApp.css';
 import { PID } from './pid';
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
 import { FormControl, Slider, Typography } from '@mui/material';
@@ -30,7 +30,7 @@ const App = () => {
 	}, [graphSettings, pid]);
 
 	return (
-		<div className="App">
+		<div className="PIDAPP">
 			<div className='graphs'>
 				<ResponsiveContainer width="100%" height={400} >
 					<LineChart
