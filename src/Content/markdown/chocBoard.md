@@ -2,13 +2,13 @@
 
 chocBoard is a truly wireless, split ergonomic keyboard designed for portability and comfort. It is powered by ZMK firmware and a pair of Nice!Nanos. The design is 100% my own and open source.
 
-![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/iris.png)
+![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/iris.jpeg)
 
 I have been using my Keeb.io Iris for just about 3 years now, and I have fallen in love with split ergo keyboards. Last year I started as a software developer intern and found myself bringing my Iris with me wherever I worked. The Iris is not a large keyboard, but it is still a bit bulky to carry around. I decided to design a keyboard that would be more portable, and using [Ergogen](https://github.com/ergogen/ergogen) to create the layout proved to be very useful for rapid prototyping and testing.
 
 Every time the layout was tweaked I would 3D Print a dummy version at the [Tulane Makerspace](https://makerspace.tulane.edu) to test out how it fit my hands, eventually perfecting the layout led to me routing finishing the PCB design and sending it off to [JLCPCB](https://jlcpcb.com/) who did a fantastic job.
 
-![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/portraitPCB.png)
+![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/portraitPCB.jpeg)
 
 chocBoard uses Kaihl Choc switches to maintain a low profile. I opted for choc pro reds and have been pretty happy with them other than the long process of individually lubing them.
 
