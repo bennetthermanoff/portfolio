@@ -4,6 +4,9 @@ import makerspaceCardReaderHeader from './markdown/images/makerspaceCardReaderHe
 import fightStick from './markdown/fightStick.md'
 import fightStickImg from './markdown/images/fightstick.JPG'
 
+import chocBoard from './markdown/chocBoard.md'
+import chocBoardImg from './markdown/images/chocBoardCover.jpeg'
+
 import resume from './markdown/resume.md'
 import resumeImg from './markdown/images/headshot.jpeg'
 
@@ -17,6 +20,14 @@ const contents= [
         content: '',
         description: 'Open source react/node app for controlling access to makerspace tools and equipment.',
         previewImg:makerspaceCardReaderHeader
+    },
+    {
+        title:'chocBoard',
+        id: 'chocBoard',
+        import: chocBoard,
+        content: '',
+        description: 'Custom truly wireless ergonomic split keyboard powered by Zephyr.',
+        previewImg: chocBoardImg
     },
     {
         title:'fightStick',
