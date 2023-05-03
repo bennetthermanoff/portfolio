@@ -1,6 +1,7 @@
 .markdownText{
   text-align: left;
   margin: 0 55px;
+  font-size: calc(4px + 2vmin);
 }
 
 .contentBackgroundColumn{
@@ -13,7 +14,7 @@
   overflow-y: visible;
   position: center;
   margin-top: 10px;
-  width: 1150px;
+  width: 800px;
   height: min-content;
   /* flex-basis: inherit; */
   text-align: left;
@@ -39,7 +40,7 @@ text-align: left;
 border-radius: 10px;
 }
 
-img[alt=photo] { width: 65vw; text-align: center; max-width: 800px; }
+img[alt=photo] { width: 65vw; text-align: center; max-width: 600px; }
 img[alt=photo-small] { width: 65vw; text-align: center; max-width: 300px; }
 
 .contentflexWrapper{
