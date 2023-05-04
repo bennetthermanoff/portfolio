@@ -4,13 +4,13 @@ chocBoard is a truly wireless, split ergonomic keyboard designed for portability
 
 ![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/iris.jpeg)
 
-I have been using my Keeb.io Iris for just about 3 years now, and I have fallen in love with split ergo keyboards. Last year I started as a software developer intern and found myself bringing my Iris with me wherever I worked. The Iris is not a large keyboard, but it is still a bit bulky to carry around. I decided to design a keyboard that would be more portable, and using [Ergogen](https://github.com/ergogen/ergogen) to create the layout proved to be very useful for rapid prototyping and testing.
+I have been using my Keeb.io Iris for just about 3 years now, and I have developed a strong preference for split ergo keyboards. Last year I started as a software developer intern and found myself bringing my Iris with me wherever I worked. The Iris is not a large keyboard, but it is still a bit bulky to carry around. I decided to design a keyboard that would be more portable, and using [Ergogen](https://github.com/ergogen/ergogen) to create the layout proved to be very useful for rapid prototyping and testing.
 
 Every time the layout was tweaked I would 3D Print a dummy version at the [Tulane Makerspace](https://makerspace.tulane.edu) to test out how it fit my hands, eventually perfecting the layout led to me routing finishing the PCB design and sending it off to [JLCPCB](https://jlcpcb.com/) who did a fantastic job.
 
 ![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/portraitPCB.jpeg)
 
-chocBoard uses Kaihl Choc switches to maintain a low profile. I opted for choc pro reds and have been pretty happy with them other than the long process of individually lubing them.
+chocBoard uses Kaihl Choc switches to maintain a low profile. I opted for choc pro reds and have been pretty happy with them other than the long process of individually lubricating each switch for better characteristics.
 
 I purchased diodes, microprocessors, batteries, switches, caps, and nice!view screens from [typeractive.xyz](https://typeractive.xyz/) and got to work soldering everything together. There is a good amount of SMD diodes so it was good practice for me to get better at soldering SMD components. The PCB is designed to be flipped over for the other half of the keyboard, so I have bridges underneath the microcontroller to flip the pins around. This greatly reduces cost by allowing for a single PCB design for both halves of the keyboard.
 

@@ -48,7 +48,7 @@ const Content = ({ content }) => {
             
         }}>
             <div className="contentboxtext">
-                <h1>{content.title}</h1>
+                <h1 style={'fightStick,chocBoard'.includes(content.title)?{fontFamily:'georgia',letterSpacing:-4}:{}}>{content.title}</h1>
                 <p>{content.description}
 
                 </p>
