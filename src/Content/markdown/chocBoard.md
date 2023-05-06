@@ -14,7 +14,7 @@ Every time the layout was tweaked I would 3D Print a dummy version at the Tulane
 
 ![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/pcb.png)
 
-I purchased diodes, microprocessors (nice!nano), batteries, switches, caps, and screens (nice!view) for my PCB and got to work soldering everything together at the MakerSpace. There is a good amount of surface mount components, measuring only a couple millimeters long, so it was excellent practice for my soldering skills. My favorite part of the keyboard is the firmware. Uniquely, I have created my own custom version of ZMK, a wireless keyboard firmware, to add configuration for chocBoard and its various features. I have published this firmware and every other aspect of chocBoard’s design on my GitHub account.
+I purchased diodes, microprocessors (nice!nano), batteries, switches, caps, and screens (nice!view) for my PCB and got to work soldering everything together at the MakerSpace. There is a good amount of surface mount components, measuring only a couple millimeters long, so it was excellent practice for my soldering skills. My favorite part of the keyboard is the firmware. I have created my own custom version of ZMK, a wireless keyboard firmware based on Zephyr, to add configuration for chocBoard and its various features. I have my fork of ZMK and every other aspect of chocBoard’s design on my GitHub account.
 
 ![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/chocGif.gif)
 
@@ -22,4 +22,4 @@ Using chocBoard as my daily driver keyboard has been a quick way to find bugs an
 
 ![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/chocCaseDeployGif.gif)
 
-Importantly, with the increase in hybrid work environments this portable keyboard allows for safer typing as well as increased productivity through its custom design. Software engineers are required to type quickly and accurately. Using this same keyboard in all work environments (office and home) creates a smooth and safe transfer of skills. I have enjoyed making this custom keyboard come to life, and it has positively impacted my daily life as my favorite input device. Additionally, my open-source design is fully accessible to other users and my hope is that I am solving these problems for others.
+Importantly, with the increase in hybrid work environments this portable keyboard allows for safer typing as well as increased productivity through its custom design. Software engineers are required to type quickly and accurately and being able to use this keyboard anywhere with any setup has allowed for great consistency. I have enjoyed making this custom keyboard come to life, and it has positively impacted my daily life as my favorite input device. Additionally, my open-source design is fully accessible to everyone and my hope is that my work helps others develop their own keyboards.
