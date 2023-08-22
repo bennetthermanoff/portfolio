@@ -35,7 +35,7 @@ const ContentPage = () => {
         
             <div className='content'>
                 
-                    <img className='headerImg' src={contents.find(x => x.id === id).previewImg} alt={contents.find(x => x.id === id).title} />
+                    <img className='headerImg' src={contents.find(x=>x.id===id).contentImg? contents.find(x => x.id === id).contentImg:contents.find(x => x.id === id).previewImg } alt={contents.find(x => x.id === id).title} />
                 
                 <div className='contentBackgroundColumn'>
 

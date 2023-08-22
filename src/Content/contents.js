@@ -9,6 +9,8 @@ import chocBoardImg from './markdown/images/chocBoardCover.jpeg'
 
 import resume from './markdown/resume.md'
 import resumeImg from './markdown/images/headshot.jpeg'
+import resumeImgPreview from './markdown/images/headshotB.jpg'
+
 
 import current from './markdown/current.md'
 import currentImg from './markdown/images/the3sensors.jpeg'
@@ -51,7 +53,8 @@ const contents= [
         import: resume,
         content: '',
         description: 'learn more about me and my experience as a software engineer and maker.',
-        previewImg: resumeImg
+        previewImg: resumeImgPreview,
+        contentImg: resumeImg
     },
     
 
