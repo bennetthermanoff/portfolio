@@ -24,8 +24,8 @@ const AppBar = () => {
 const App = ({isNavigated}) => {
   const history = useHistory();
   useEffect(() => {
-    if(history.action === 'POP'){
-      setScrollPosition(256);
+    window.onpopstate = () => {
+      history.push(`/home`);
     }
 
   }, [history]);
