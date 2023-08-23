@@ -7,4 +7,4 @@ I was disappointed with the quality of the controllers available on the market, 
 I used the Arduino IDE to program the ESP32 in C++. The code is available on [Github](). While the controller is in use, the OLED screen displays the current stick movement to help train users on how to perform motion inputs. The controller can be used with any bluetooth enabled device.
 
 
-![photo](https://github.com/xpsKING/portfolio/raw/master/src/Content/markdown/images/fightstick.gif)
+![photo](https://github.com/bennetthermanoff/portfolio/raw/master/src/Content/markdown/images/fightstick.gif)

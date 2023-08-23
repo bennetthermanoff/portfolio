@@ -16,7 +16,7 @@ const AppBar = () => {
       <div className='headerBarText2' onClick={() => { history.push(`/home`); }}>
         Bennett Hermanoff
       </div>
-      <a class='headerBarLink' href='https://github.com/xpsking' >github</a>
+      <a class='headerBarLink' href='https://github.com/bennetthermanoff' >github</a>
     </h>)
 }
 
