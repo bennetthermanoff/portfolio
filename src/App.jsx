@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React, {memo} from 'react'
 import { useHistory } from 'react-router-dom';
 import { Content } from './Content/Content';
@@ -22,6 +22,13 @@ const AppBar = () => {
 
 
 const App = ({isNavigated}) => {
+  const history = useHistory();
+  useEffect(() => {
+    if(history.action === 'POP'){
+      setScrollPosition(256);
+    }
+
+  }, [history]);
 
   const [scrollPosition, setScrollPosition] = useState(isNavigated ? 256 : 0);
   const handleScroll = () => {
