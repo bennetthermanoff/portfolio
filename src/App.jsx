@@ -11,6 +11,12 @@ function timeout(delay) {
 
 const AppBar = () => {
   const history = useHistory();
+  useEffect(() => {
+    window.onpopstate = () => {
+      history.push(`/home`);
+    }
+
+  }, [history]);
   return (
     <h className='headerBarText' >
       <div className='headerBarText2' onClick={() => { history.push(`/home`); }}>
@@ -22,13 +28,6 @@ const AppBar = () => {
 
 
 const App = ({isNavigated}) => {
-  const history = useHistory();
-  useEffect(() => {
-    window.onpopstate = () => {
-      history.push(`/home`);
-    }
-
-  }, [history]);
 
   const [scrollPosition, setScrollPosition] = useState(isNavigated ? 256 : 0);
   const handleScroll = () => {
@@ -40,7 +39,7 @@ const App = ({isNavigated}) => {
   };
   window.addEventListener('wheel', handleScroll, { passive: true });
 
-  timeout(2000).then(async () => {
+  timeout(1000).then(async () => {
     if (scrollPosition === 0) {
       setScrollPosition(12);
 
@@ -54,7 +53,7 @@ const App = ({isNavigated}) => {
      <Content content={content} />
   ), (prevProps, nextProps) => prevProps.content[0].title === nextProps.content[0].title);
   
-  timeout(3000).then( () => {
+  timeout(1500).then( () => {
     if (setScrollPosition<255){
       setScrollPosition(256);
     }
