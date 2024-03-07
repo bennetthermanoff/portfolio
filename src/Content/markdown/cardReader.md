@@ -2,6 +2,8 @@
 
 React/NodeJS/Express/MySQL app for the Tulane Makerspace. Tablets are mounted on the wall and allow users to turn on the Makerspace's  3D printer,laser cutter, and CNC Mill, and other machines. 
 
+UPDATE: Tulane Makerspace Card Reader is becoming makerPass, an iOS and Android app built with Expo and React Native. I'll have more details to share soon!
+
 ![photo](https://github.com/bennetthermanoff/portfolio/raw/master/src/Content/markdown/images/cardScreen.png)
 
 Employees are also able to "tag out" machines for maintenance or repair. 

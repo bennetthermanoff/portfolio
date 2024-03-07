@@ -2,6 +2,8 @@
 
 “chocBoard” is a truly wireless, split keyboard designed for portability and ergonomics which I personally designed, engineered, and built at the Scot Ackerman [Makerspace at Tulane University.](https://makerspace.tulane.edu)
 
+UPDATE: chocBoard is now compression (4c). Check it out at [Compression Keyboards](https://compressionkeyboards.com)
+
 ![photo](https://github.com/bennetthermanoff/portfolio/raw/master/src/Content/markdown/images/iris.jpeg)
 
 In early 2020, I developed a Repetitive Strain Injury (RSI) from typing on my computer’s keyboard. To combat this, I built an Iris ergonomic keyboard designed by keebio. This keyboard served me relatively well for three years, but it did not fully address my need for easy portability and limited wrist strain. 
