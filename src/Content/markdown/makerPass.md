@@ -5,11 +5,9 @@ MakerPass is an  iOS/Android app for managing access to machines in makerspaces.
 
 MakerPass' server is self-hosted and written in TypeScript using Node.js and Express. It uses a SQLite database to store user and machine information. **Because of its light weight nature, it can be run on a Raspberry Pi or any other server directly in the makerspace.**
 
-![photo-small](https://github.com/bennetthermanoff/portfolio/raw/master/src/Content/markdown/images/mpmainscreen.png)
-
 MakerPass doesn't currently have a web interface, instead opting for a free iOS/Android app built with Expo and React Native. The app communicates only with the self-hosted server, and users enable machines by scanning a QR code on the machine. The app also allows for users to tag out machines for maintenance or repair.
 
-![photo-small](https://github.com/bennetthermanoff/portfolio/raw/master/src/Content/markdown/images/mptrain.png)
+![photo](https://github.com/bennetthermanoff/portfolio/raw/master/src/Content/markdown/images/mpmainscreen.png)
 
 MakerPass hosts a MQTT server for communication with wifi relays. **The primary purpose of MakerPass is to only allow certain user's access to certain tools.** At the Tulane Makerspace, users must be trained on each tool, and with MakerPass, they are able to turn on the power to their authorized machines.
 
