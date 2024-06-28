@@ -21,7 +21,7 @@ const Content = ({ content }) => {
                 
                 {content.customTitle?
                 content.customTitle:
-                <h1 style={content.titleCSS}>{content.title}</h1>
+                <h1 style={{...content.titleCSS, letterSpacing:-4}}>{content.title}</h1>
                 }
 
                 {content.customDescription? 
