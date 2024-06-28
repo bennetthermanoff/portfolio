@@ -93,7 +93,7 @@ img[alt=photo-small] { width: 65vw; text-align: center; max-width: 300px; }
   color: white;
   overflow-y: scroll;
   overflow-x: hidden;
-  background: linear-gradient(-45deg, #52d4ee, #3c92e7, #5ff397, #25fad3);
+  background: linear-gradient(135deg, #1db35b, #2246be);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
