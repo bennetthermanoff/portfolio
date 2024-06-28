@@ -2,6 +2,7 @@
   text-align: left;
   margin: 0 55px;
   font-size: calc(4px + 2vmin);
+  letter-spacing: -.065em
 }
 
 .contentBackgroundColumn{
