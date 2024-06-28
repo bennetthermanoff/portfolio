@@ -10,7 +10,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-
+import "@fontsource/inter"; // Defaults to weight 400
 import { ContentPage } from './Content/ContentPage'
 
 
